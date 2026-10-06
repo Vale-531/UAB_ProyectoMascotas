@@ -1,0 +1,44 @@
+header{
+    background-color: #F76C5E;
+    color: #F2EFE9;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: -20px;
+
+}
+body{
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.6px;
+    background-color: #F2EFE9;
+    justify-content: center;
+}
+h1{
+    font-size: 45px;
+}
+nav{
+
+    background-color: #324376;
+}
+
+li{
+    text-align: center;
+    display: inline-block;
+    color: #F2EFE9;
+    font-weight: bold;
+}
+li a{
+    color: #F2EFE9;
+    text-decoration: none;
+    padding: 20px;
+}
+section{
+    background-color:#F5DD90;
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: #324376;
+    color: #F2EFE9;
+}
