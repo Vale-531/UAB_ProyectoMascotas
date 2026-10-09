@@ -5,10 +5,11 @@ body{
     letter-spacing: -0.6px;
     background-color: #48426d;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 header{
-    display: flex;
+    
     background-color: #312c51;
     color: #F2EFE9;
     padding: 10px 30px ;
@@ -26,7 +27,7 @@ nav ul{
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 nav li{
@@ -56,6 +57,9 @@ footer{
     color: #F2EFE9;
     padding: 20px;
 }
+#fotos{
+    display: flex;
+}
 #fotos li{
     list-style: none;
     background-color: #312c51;
@@ -63,6 +67,7 @@ footer{
     padding: 10px;
     border-radius: 10px;
 }
+
 @media(max-width: 600px){
     header{
         flex-direction: column;
@@ -77,4 +82,9 @@ footer{
         padding:12px;
     }
 
+}
+
+.oscuro{
+    background-color:#F2EFE9 ;
+    color:#48426d;
 }
