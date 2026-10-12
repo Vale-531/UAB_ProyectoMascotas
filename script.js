@@ -14,10 +14,10 @@ botonModo.addEventListener('click', cambiarmodo);
 
 
 
-const botonMenu=document.querySelector("btn-menu");
-const menu=documento.querySelector("nav ul");
+const botonMenu=document.querySelector("#btn-menu");
+const menu=document.querySelector("nav ul");
 function cambiarmenu(){
     menu.classList.toggle("abierto");
 
 }
-    botonMenu.addEventListener("click", cambiarmenu);
+botonMenu.addEventListener('click', cambiarmenu);
