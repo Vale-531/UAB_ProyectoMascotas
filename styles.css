@@ -159,7 +159,22 @@ footer{
 
 }
 
-.oscuro{
-    background-color:#F2EFE9 ;
-    color:#48426d;
+body.oscuro{
+    background-color:#2e2e2e;
+    color:#FFFFFF;
+}
+body.oscuro header{
+    background-color:#2e2e2e;
+    color: #FFFFFF;
+}
+body.oscuro #btn-tema{
+    background-color:  #FFFFFF;
+    color: #2e2e2e;
+}
+body.oscuro nav{
+    background-color: #162c9a;
+    box-shadow: none;
+}
+body.oscuro nav a{
+    color: #FFFFFF;
 }

@@ -1,6 +1,13 @@
-const boton=document.querySelector("#btn-tema");
-let modonoche=true;
+const cuerpo = document.querySelector("body");
+const botonModo=document.querySelector("#btn-tema");
+let modonoche=false;
 function cambiarmodo (){
-    document.body.classList.toggle("oscuro");
+    cuerpo.classList.toggle("oscuro");
+    modonoche=!modonoche;
+    if (modonoche) {
+        botonModo.textContent =  "☀️ Modo día";
+    } else {
+        botonModo.textContent = "🌙 Modo noche";
+    }
 }
-boton.addEventListener('click', cambiarmodo);
+botonModo.addEventListener('click', cambiarmodo);
