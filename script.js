@@ -11,3 +11,13 @@ function cambiarmodo (){
     }
 }
 botonModo.addEventListener('click', cambiarmodo);
+
+
+
+const botonMenu=document.querySelector("btn-menu");
+const menu=documento.querySelector("nav ul");
+function cambiarmenu(){
+    menu.classList.toggle("abierto");
+
+}
+    botonMenu.addEventListener("click", cambiarmenu);
