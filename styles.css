@@ -1,64 +1,80 @@
 
 body{
-    font-family: 'Lucida Sans', sans-serif;
-    font-size: 18px;
-    letter-spacing: -0.6px;
-    background-color: #48426d;
     margin: 0;
-    flex-wrap: wrap;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    background-color: #FFFFFF;
+    color: #2e2e2e;
+    line-height: 1;
 }
 
-header{
-    
-    background-color: #312c51;
-    color: #F2EFE9;
-    padding: 10px 30px ;
+header{  
+    background-color: #162c9a;
+    color: #FFFFFF;
+    padding: 10px 30px;
     margin: 0px;
 }
 
 h1{
     font-size: 40px;
+    font-weight: bold;
 }
-nav{
-    background-color: #99cdd8;
-}
-nav ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    
+header p{
+    font-size: 20px;
 }
 
-nav li{
-    color: #48426d;
-} 
+#btn-tema{
+    margin-bottom: 10px;
+    background-color: #2e2e2e;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    box-shadow: 0px 5px 10px 1px #2e2e2e;
+    font-weight: bold;
+}
+
+
+nav{
+    background-color: #FFFFFF;
+    padding: 10px 5px;
+    box-shadow: 0px 5px 10px 1px #808080;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
 nav a{
-    color: #48426d;
+    color: #268afa;
     text-decoration: none;
     font-weight: bold;
 }
 
-li a{
-    color: #48426d;
-    text-decoration: none;
-    padding: 20px;
-}
-section{
-    background-color:#f0c38e;
-    padding: 10px 20px 10px 20px;
-    margin: 20px;
-    border-radius: 10px;
-    
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 15px;
 }
 
-footer{
-    background-color: #657166;
-    color: #F2EFE9;
-    padding: 20px;
+.tarjeta{
+    background-color: #268afa;
+    padding: 10px 20px;
+    margin: 0px;
+    border-radius: 10px;    
+    color:#FFFFFF;     
 }
+
+
 #fotos{
     display: flex;
+    
 }
 #fotos li{
     list-style: none;
@@ -66,6 +82,14 @@ footer{
     margin: 20px;
     padding: 10px;
     border-radius: 10px;
+}
+
+
+
+footer{
+    background-color: #657166;
+    color: #F2EFE9;
+    padding: 20px;
 }
 
 @media(max-width: 600px){
