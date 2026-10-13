@@ -51,20 +51,20 @@ section{
     padding: 10px;
     border-radius: 10px;
     background-color: #a8dadc;
+    border-left: 3px solid #335C67;
 }
 
 #lavados ul{
-    
     display: flex;
-    gap: 20px;
+    flex-direction: row;
+    gap: 30px;
     list-style: none;
     align-items: center;
-    justify-content: center;
 }
 #lavados li{
     margin: 0;
     background-color: #f1faee;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 10px;
 }
 
@@ -73,6 +73,22 @@ footer{
     color: #f1faee;
     padding: 5px;
     text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font: inherit;
+    margin: 20px;
+    gap: 10px;
+    
+}
+form button{
+    background-color: #457b9d;
+    color: #f1faee;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 
