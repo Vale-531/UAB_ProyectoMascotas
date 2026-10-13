@@ -75,9 +75,7 @@ footer{
     text-align: center;
 }
 
-form{
 
-}
 
 #btn-confirmar{
     margin: 20px;
@@ -89,8 +87,15 @@ form{
     font-weight: bold;
 }
 #mensaje{
+    display: none;
+}
+#mensaje.mostrar{
+    display: block;
     background-color:#e63946 ;
     font-weight: bold;
+    padding: 10px 20px;
+    color: #f1faee;
+    text-align: center;
 }
 
 @media(max-width: 600px){
@@ -98,6 +103,5 @@ form{
         display: flex;
         flex-direction: column; 
     }
-
 
 }
