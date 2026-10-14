@@ -92,9 +92,9 @@
         <section>
             <h2>Encuentra tu mascota</h2>
             <p>Llena este formulario y te mandaremos una lista de mascotas más adecuadas para tí </p>
-            <form action="">
+            <form id="form-adoptante" novalidate>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
 
                 <label for="correr">Correo</label>
                 <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
@@ -125,6 +125,7 @@
                 <textarea id="extra" name="extra"  rows="4" placeholder="¿Que otros aspectos deberíamos considerar?"></textarea>
 
                 <button type="submit">Enviar solicitud</button>
+                <p id="aviso-adoptante" class="aviso"></p>
 
             </form>
         </section>
