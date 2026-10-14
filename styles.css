@@ -150,7 +150,27 @@ form button{
 }
 
 
+.aviso{
+    /*display: none;*/
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
 
+.aviso.error{
+    display: block;
+    background-color:#C62828;
+    color:   #FDECEC;
+}
+
+.aviso.exito{
+    display: block;
+    background-color:#2E7D32;
+    color:   #E8F5E9;
+
+
+}
 
 footer{
     background-color: #2e2e2e;
