@@ -6,7 +6,7 @@ body{
     letter-spacing: -0.5px;
     background-color: #FFFFFF;
     color: #2e2e2e;
-    line-height: 1;
+    line-height: 1,5;
 }
 
 header{  
@@ -96,10 +96,16 @@ section{
     border-radius: 10px;
     list-style: none;
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 10px;
     color:  #2e2e2e;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .btn-mas{
     background-color: #FAAA20;
     color: #2e2e2e;
@@ -126,10 +132,14 @@ section{
     border-left: 2px solid #162c9a;
 }
 form{
+    background-color:#EAF3FF ;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px;
     max-width: 600px;
     margin: 0 auto;
+    border-radius: 10px;
 }
 form label{
     font-weight: bold;
@@ -137,6 +147,14 @@ form label{
     margin-bottom: 5px;
     font: inherit;
 }
+form input, textarea, select{
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 10px;    
+    padding: 12px; 
+}
+
+
 form button{
     margin-top: 20px;
     background-color: #FAAA20;
@@ -148,7 +166,6 @@ form button{
     font: inherit;
     font-weight: bold;
 }
-
 
 .aviso{
     /*display: none;*/
@@ -205,11 +222,11 @@ footer{
 }
 
 body.oscuro{
-    background-color:#2e2e2e;
-    color:#FFFFFF;
+    background-color:#121827;
+    color:#E8EEF8;
 }
 body.oscuro header{
-    background-color:#2e2e2e;
+    background-color:#162C9A;
     color: #FFFFFF;
 }
 body.oscuro #btn-tema{
@@ -217,9 +234,27 @@ body.oscuro #btn-tema{
     color: #2e2e2e;
 }
 body.oscuro nav{
-    background-color: #162c9a;
+    background-color: #1C2638;
+    color: #E8EEF8;
     box-shadow: none;
 }
 body.oscuro nav a{
     color: #FFFFFF;
+}
+
+body.oscuro #fotos li{
+    background-color:#1C2638 ;
+    color:#E8EEF8 ;
+}
+
+body.oscuro .tarjeta{
+    background-color:#203B66 ;
+
+}
+body.oscuro form{
+    background-color: #2e2e2e;
+}
+body.oscuro footer{
+    background-color: #0B101A;
+    color: #F2EFE9;
 }

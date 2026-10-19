@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Encuentra tu mascota</h1>
+        <h1>Sistema de adopción de mascotas</h1>
         <p>Adoptar salva vidas</p>
         <button id="btn-tema">Modo oscuro🌙</button>
     </header>
@@ -27,7 +27,7 @@
             <h2>Últimos rescates</h2>
             <ul id="fotos">
                 <li>
-                    <img src="#" alt="Imagen animal rescatado">
+                    <img src="img/mascota4.jpg" alt="Imagen animal rescatado">
                     <p>Choco</p>
                     <p>Edad: 3 años ±</p>
                     <p>Género: Macho</p>
@@ -35,7 +35,7 @@
                     <button class="btn-mas">Quiero saber mas</button>
                 </li>
                 <li>
-                    <img src="#" alt="Imagen animal rescatado">
+                    <img src="img/mascota3.jpg" alt="Imagen animal rescatado">
                     <p>Pimienta</p>
                     <p>Edad: 1 años ±</p>
                     <p>Género: Hembra</p>
@@ -43,7 +43,7 @@
                     <button class="btn-mas">Quiero saber mas</button>
                 </li>
                 <li>
-                    <img src="#" alt="Imagen animal rescatado">
+                    <img src="img/mascota1.jpg" alt="Imagen animal rescatado">
                     <p>Dugui</p>
                     <p>Edad:9 años ±</p>
                     <p>Género:Macho</p>
@@ -51,8 +51,8 @@
                     <button class="btn-mas">Quiero saber mas</button>
                 </li>
                 <li>
-                    <img src="#" alt="Imagen animal rescatado">
-                    <p>Nombre: Pelusa</p>
+                    <img src="img/macota2.jpg" alt="Imagen animal rescatado">
+                    <p>Nombre: Laika</p>
                     <p>Edad: 4 meses</p>
                     <p>Género:Hembra</p>
                     <p>Fecha de rescate: 28-10-26</p>
@@ -96,12 +96,12 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
 
-                <label for="correr">Correo</label>
+                <label for="correo">Correo</label>
                 <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
 
                 <label for="especie">¿Que especie deseas?</label>
-                <input type="radio" id="especie" name="especie" value="perro"><label for="perro">Perro</label>
-                <input type="radio" id="especie" name="especie" value="gato"><label for="gato">Gato</label>
+                <label for="perro"><input type="radio" id="perro" name="especie" value="perro" checked>Perro</label>
+                <label for="gato"><input type="radio" id="gato" name="especie" value="gato">Gato</label>
                 
                 <label for="genero">Género: </label>
                 <select name="genero" id="genero">
@@ -110,8 +110,8 @@
                     <option value="">Macho</option>
                 </select>
 
-                <label for="">Talla: </label>
-                <select name="" id="">
+                <label for="talla">Talla: </label>
+                <select name="" id="talla">
                     <option value="">Todos</option>
                     <option value="">Pequeño (4-10Kg)</option>
                     <option value="">Mediano (11-25Kg)</option>
