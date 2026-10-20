@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adopta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de adopción de mascotas</h1>
+        <p>Adoptar salva vidas</p>
+        <button id="btn-tema">Modo oscuro🌙</button>
+    </header>
+    <nav>
+        <button type="button" id="btn-menu" class="hamburguesa">☰ Menú</button>
+        <ul>
+            <li><a href="#">Nuestras mascotas</a></li>
+            <li><a href="#">Hogar temporal</a></li>
+            <li><a href="#">Refugios activos</a></li>
+            <li><a href="#">Donar</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Últimos rescates</h2>
+            <ul id="fotos">
+                <li>
+                    <img src="img/mascota4.jpg" alt="Imagen animal rescatado">
+                    <p>Choco</p>
+                    <p>Edad: 3 años ±</p>
+                    <p>Género: Macho</p>
+                    <p>Fecha de rescate: 09-10-26</p>
+                    <button class="btn-mas">Quiero saber mas</button>
+                </li>
+                <li>
+                    <img src="img/mascota3.jpg" alt="Imagen animal rescatado">
+                    <p>Pimienta</p>
+                    <p>Edad: 1 años ±</p>
+                    <p>Género: Hembra</p>
+                    <p>Fecha de rescate: 29-09-26</p>
+                    <button class="btn-mas">Quiero saber mas</button>
+                </li>
+                <li>
+                    <img src="img/mascota1.jpg" alt="Imagen animal rescatado">
+                    <p>Dugui</p>
+                    <p>Edad:9 años ±</p>
+                    <p>Género:Macho</p>
+                    <p>Fecha de rescate: 29-09-26</p>
+                    <button class="btn-mas">Quiero saber mas</button>
+                </li>
+                <li>
+                    <img src="img/macota2.jpg" alt="Imagen animal rescatado">
+                    <p>Nombre: Laika</p>
+                    <p>Edad: 4 meses</p>
+                    <p>Género:Hembra</p>
+                    <p>Fecha de rescate: 28-10-26</p>
+                    <button class="btn-mas">Quiero saber mas</button>
+                </li>
+            </ul>
+        </section>
+        <section class="tarjeta">
+            <h3>Artículos importantes</h3>
+            <article>
+                <h3>
+                    Regla 3-3-3
+                </h3>
+                <p>
+                    La denominada regla 3-3-3 divide el proceso de adaptación de un perro adoptado en tres etapas aproximadas: los primeros tres días, las primeras tres semanas y los primeros tres meses de convivencia.
+
+                </p>
+            </article>
+            <article>
+                <h3>
+                    Proceso de adopción
+                </h3>
+                <p>
+                    Se realiza la solicitud para un o varios perros de su interés, se recibirán en el refugio los documentos requeridos, y los rescatistas considerarán la información provista por usted. Si todo se aprueba adecuadamente se le hará la entrega de la mascota a su domicilio.
+                </p>
+            </article>
+            <article>
+                <h3>
+                    Refugios
+                </h3>
+                <p>
+                    Se cuentan con albergues para cantidades grandes de mascotas como ser el albergue angelino, zoonosis, Alma pro patitas, Animal Rights Oruro. Se tiene además hogares temporales que llegan a alberguergar mascotas por un periodo de tiempo limitado y en menor cantidad
+
+                </p>
+            </article>
+        </section>
+        <section>
+            <h2>Encuentra tu mascota</h2>
+            <p>Llena este formulario y te mandaremos una lista de mascotas más adecuadas para tí </p>
+            <form id="form-adoptante" novalidate method="POST" action="procesar.php">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+
+                <label for="correo">Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+
+                <label for="">¿Que especie deseas?</label>
+                <label for="perro"><input type="radio" id="perro" name="especie" value="perro" checked>Perro</label>
+                <label for="gato"><input type="radio" id="gato" name="especie" value="gato">Gato</label>
+                
+                <label for="genero">Género: </label>
+                <select name="genero" id="genero">
+                    <option value="todos">Todos</option>
+                    <option value="hembra">Hembra</option>
+                    <option value="macho">Macho</option>
+                </select>
+
+                <label for="talla">Talla: </label>
+                <select name="talla" id="talla">
+                    <option value="todos">Todos</option>
+                    <option value="pequeño">Pequeño (4-10Kg)</option>
+                    <option value="mediano">Mediano (11-25Kg)</option>
+                    <option value="grande">Grande (26-45Kg)</option>
+                </select>
+
+                <label for="cantidad">¿Cuántas mascotas estás dispuesto a adoptar?</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="3" value="1">
+
+                <label for="extra">Información extra que deseas que se tome a consideración</label>
+                <textarea id="extra" name="extra"  rows="4" placeholder="¿Que otros aspectos deberíamos considerar?"></textarea>
+
+                <button type="submit">Enviar solicitud</button>
+                <p id="aviso-contacto" class="aviso"></p>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Encuentra tu mascota</h3>
+        <p>Proyecto Tecnologías en Internet UAB 2026  &copy; Valeria Gutiérrez</p>
+        <a href="#">Contactanos</a>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
