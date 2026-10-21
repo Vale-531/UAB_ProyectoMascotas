@@ -20,7 +20,7 @@ function revisarPedido(event){
         avisoPedido.classList.add("error");
         avisoPedido.classList.remove("exito");
     } else{
-        avisoPedido.textContent="Registro exitoso. Su pedido fue procesado correctamente. Gracias";
+        avisoPedido.textContent="Registro exitoso. Su pedido fue procesado correctamente. Valeria Lucía Gutiérrez Callejas Gracias";
         avisoPedido.classList.add("exito");
         avisoPedido.classList.remove("error");
 
