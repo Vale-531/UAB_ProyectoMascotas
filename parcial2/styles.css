@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    background-color: #FDFCDC;
+    color: #2e2e2e;
+    line-height: 1,5;
+}
+
+header{  
+    background-color: #F07167;
+    color: #FDFCDC;
+    padding: 10px 30px;
+    margin: 0px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+header p{
+    font-size: 20px;
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+form{
+    background-color:#FED9B7 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+form label{
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font: inherit;
+}
+form input, textarea, select{
+    font: inherit;
+    border: 1px solid #ccc;
+    border-radius: 10px;    
+    padding: 6px; 
+}
+
+form button{
+    margin-top: 20px;
+    background-color: #00AFB9;
+    margin-bottom: 10px;
+    color:  #FFFF;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    font-weight: bold;
+}
+.aviso{
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.aviso.error{
+    display: block;
+    background-color:#F07167;
+    color:   #FFFF;
+}
+
+.aviso.exito{
+    display: block;
+    background-color:#00AFB9;
+    color:   #FFFF;
+}
+
+
+footer{
+    background-color: #0081A7;
+    color:#FFFF ;
+    padding: 10px;
+}

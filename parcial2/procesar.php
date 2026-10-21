@@ -6,7 +6,7 @@ $pedido=$_POST["pedido"];
 
 
 echo "
-    <header>
+    <header >
         <h2>
             Pedido recibido en Salteneria El Horno
         </h2>
