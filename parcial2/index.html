@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salteñería: El Horno</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Salteñería: El Horno
+        </h1>
+        <p>
+            Somos una salteñería de Oruro, con las mejores salteñas para todo gusto. ¿Las quieres de res, pollo, cerdo, PIZZA?! Lo encontrarás aquí
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>Raliza tu pedido</h2>
+            <form id="form-horno" action="procesar.php" method="post" novalidate>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="pedido">¿Qué desea pedir?</label>
+                <textarea name="pedido" id="pedido">
+                </textarea>
+                <button type="submit">Hacer mi pedido</button>
+                <p id="aviso-horno" class="aviso">
+                    
+
+                </p>
+            </form>
+            
+
+            </p>
+        </section>
+        
+
+    </main>
+    <footer>
+        <p>Parcial 2 - Valeria Lucía Gutiérrez Callejas - 20 de octubre de 2026</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
