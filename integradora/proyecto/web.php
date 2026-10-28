@@ -32,9 +32,9 @@ Route::post('/tortas/nuevo', function () {
         'sabor' => 'required',
         'precio' => 'required|integer',
     ], [
-        'nombre.required' => 'Debe mencionar el sabor de la torta.',
+        'sabor.required' => 'Debe mencionar el sabor de la torta.',
         'precio.required' => 'El precio no puede quedar vacío.',
-        'precio.integer' => 'El precio tiene que ser un número entero, sin letras.',
+        'precio.integer' => 'El precio tiene que ser un número entero, no decimales.',
     ]);
       Torta::create([
         'sabor' => request()->input('sabor'),

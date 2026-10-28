@@ -10,7 +10,8 @@
                 @endforeach
                 </ul>
             @endif
-            <form method="POST" action="/tortas/nuevo">
+
+            <form method="POST" action="/tortas/nuevo" novalidate>
             @csrf 
                 <label for="sabor">Sabor de la torta</label>
                 <input type="text" id="sabor" name="sabor" required>
