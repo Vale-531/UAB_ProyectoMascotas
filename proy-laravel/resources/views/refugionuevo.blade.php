@@ -24,7 +24,7 @@
                 <label for="tipo"><input type="radio" id="tipo" name="tipo" value="refugio" checked>Refugio</label>
                 <label for="tipo"><input type="radio" id="tipo" name="tipo" value="hogar temporal">Hogar temporal</label>
 
-                <button type="submit">Registrar mascota</button>  
+                <button type="submit">Registrar refugio</button>  
             </form>
 
 
