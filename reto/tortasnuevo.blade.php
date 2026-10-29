@@ -4,7 +4,7 @@
 <section>
             <h2>Agregar una torta</h2>
             @if ($errors->any())
-                <ul style="color: #b00020;">
+                <ul class='errores' style="color: #b00020;">
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
                 @endforeach
@@ -20,7 +20,7 @@
                 <input type="number" id="precio" name="precio"  required>
 
                 <label for="stock">Stock</label>
-                <input type="number" id="stock" name="stock"  required>
+                <input type="number" id="stock" name="stock"  min=1 value=1 required>
 
                
                 <button type="submit">Registrar torta</button>  

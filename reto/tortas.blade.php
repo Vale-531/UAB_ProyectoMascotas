@@ -8,7 +8,7 @@
 
   <ul>
     @foreach ($tortas as $torta)
-      <li>{{ $torta->sabor }} — Bs {{ $torta->precio }} stock:{{ $torta->stock }}</li>
+      <li><p style=font-size: 25px;>{{ $torta->sabor }} | Bs {{ $torta->precio }} | stock:{{ $torta->stock }}</p></li>
     @endforeach
   </ul>
 
